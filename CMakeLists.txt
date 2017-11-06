@@ -52,7 +52,3 @@ target_link_libraries(OpenGLEngine ${GLEW_LIB})
 find_library(GLFW_LIB glfw)
 message(${GLFW_LIB})
 target_link_libraries(OpenGLEngine ${GLFW_LIB})
-
-find_package(Bullet REQUIRED)
-include_directories(${BULLET_INCLUDE_DIR})
-link_libraries(BulletDynamics BulletCollision)
